@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="healthify_red">#fff44336</color>
+    <color name="healthify_grey">#fffafafa</color>
+    <color name="healthify_dark_grey">#ffcccccc</color>
+</resources>

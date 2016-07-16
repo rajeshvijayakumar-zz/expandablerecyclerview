@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/parent_view"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/month_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_below="@id/tool_bar"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        />
+
+    <net.demo.healthifyme.PagerSlidingTabStrip
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/month_name_view"
+        android:padding="3dp"
+        android:textAlignment="center"
+        app:pstsIndicatorColor="@color/healthify_red"
+        app:pstsIndicatorHeight="1dp"
+        app:pstsShouldExpand="false"
+        app:pstsTabBackground="@android:color/white"
+        app:pstsTextAllCaps="false"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"/>
+
+    <ProgressBar
+        android:id="@+id/progress_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:progressDrawable="@android:drawable/progress_indeterminate_horizontal"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

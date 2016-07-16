@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HealthifyMe</string>
+
+    <string name="no_network_available">No Network Available.</string>
+    <string name="retry">Retry</string>
+    <plurals name="str_slots_available">
+        <item quantity="one"> %d Slot Available</item>
+        <item quantity="other"> %d Slots Available</item>
+    </plurals>
+
+</resources>
